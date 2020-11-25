@@ -21,13 +21,11 @@
 
 export class LinkedList <T> {
     private _head: MyNode <T>| null;
-    private _tail: MyNode <T>| null;
     private _len: number = 0;
 
     constructor() {
         this._len = 0;
         this._head = null;
-        this._tail = null;
     }
 
     get len(): number {
@@ -36,10 +34,6 @@ export class LinkedList <T> {
 
     get head(): MyNode <T>| null {
         return this._head;
-    }
-
-    get tail(): MyNode <T>| null {
-        return this._tail;
     }
 
     public push(elem: T): void {
